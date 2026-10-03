@@ -24,37 +24,7 @@ CREATE TABLE IF NOT EXISTS students (
 )
 """)
 
-# Insert student
-cursor.execute("""
-INSERT INTO students (
-    full_name,
-    date_of_birth,
-    age,
-    gender,
-    mobile_number,
-    email_address,
-    password,
-    preferred_language,
-    school_college_name,
-    class_grade,
-    board_curriculum,
-    academic_year
-)
-VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-""", (
-    "Aksin Rajan",
-    "15-12-2006",
-    19,
-    "Male",
-    "9747754375",
-    "aksinrajan@gmail.com",
-    "123456",
-    "English",
-    "Ilahia College",
-    "BCA",
-    "MGU",
-    "2026"
-))
+#DDL commands in DB.PY
 
 # Save
 conn.commit()
